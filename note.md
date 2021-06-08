@@ -8,4 +8,4 @@ i made this game with very simply things like: Html, css and javascript.
 
 - basic html h1 and p and input
 - basic css and gaming font
-- js is the main things to thinking in deep-dive
+- js is the most important part

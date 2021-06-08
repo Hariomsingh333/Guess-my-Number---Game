@@ -128,3 +128,93 @@ footer {
   align-items: center;
   position: sticky;
 }
+
+@media screen and (max-width: 550px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* overflow-y: hidden; */
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  /* light theme btn  */
+  .dark-btn {
+    display: flex;
+    padding: 0.2rem;
+    font-size: 0.6rem;
+  }
+  .top-para {
+    display: block;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 0.5rem;
+    /* margin-right: 2rem; */
+  }
+  .header-btn {
+    padding: 0.5rem 1rem;
+    margin-top: 4rem;
+    display: block;
+  }
+  .header-h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .question-div {
+    margin: 0 auto;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+  }
+  .left {
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 auto; */
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    /* margin: 0 auto; */
+  }
+  .message {
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+  }
+  .label-score {
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+  }
+  .label-highscore {
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    display: flex;
+    text-align: center;
+  }
+  #number {
+    font-size: 1rem;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
