@@ -14,24 +14,6 @@ body {
   color: #eee;
   background-color: black;
 }
-/* layout  */
-main {
-  height: 65vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-.left {
-  width: 52rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.right {
-  width: 52rem;
-  font-size: 2rem;
-}
-
 /* element  */
 /* dark button  */
 .dark-btn {
@@ -83,39 +65,47 @@ main {
 }
 .question-mark {
   display: flex;
+  font-size: 4rem;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
   width: 5rem;
   background-color: #eee;
   color: black;
   margin: 0 auto;
-  padding: 2rem 4rem;
+  padding: 2rem 3rem;
 }
 
 /* left input  */
 
 .guess-number {
-  width: 5rem;
-  padding: 1rem;
+  width: 5.6rem;
+  padding: 1.5rem 1rem;
   text-align: center;
   font-family: "Press Start 2P", cursive;
   font-size: 2rem;
   display: flex;
   background-color: black;
   color: #fff;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 .check {
   font-size: 0.6rem;
   padding: 1rem 1rem;
   margin: 0.9rem;
   font-family: "Press Start 2P", cursive;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 
 /* right  */
 .message {
   padding: 1rem;
   margin-bottom: 2rem;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 .label-score {
   margin: 0.5rem;
@@ -126,95 +116,73 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: sticky;
 }
 
 @media screen and (max-width: 550px) {
   * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    /* overflow-y: hidden; */
   }
   body {
+    font-size: 0.7rem;
+    position: relative;
+  }
+  header {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    align-items: center;
     margin: 0 auto;
   }
-  /* light theme btn  */
   .dark-btn {
     display: flex;
-    padding: 0.2rem;
-    font-size: 0.6rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+    margin-top: 1rem;
   }
   .top-para {
-    display: block;
-    text-align: center;
-    font-size: 0.7rem;
-    padding: 0.5rem;
-    /* margin-right: 2rem; */
-  }
-  .header-btn {
-    padding: 0.5rem 1rem;
-    margin-top: 4rem;
-    display: block;
-  }
-  .header-h1 {
+    width: 100%;
+    font-size: 0.6;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    margin-top: 4.5rem;
   }
-  .question-div {
-    margin: 0 auto;
+  .header-btn {
+    margin: 0;
+    margin-top: 2.5rem;
+    padding: 0.3rem;
+    font-size: 0.5;
   }
-  main {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
+  .header-h1 {
+    width: 100%;
   }
   .left {
     display: flex;
-    overflow: hidden;
-    text-align: center;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    /* margin: 0 auto; */
+    margin: 0 auto;
   }
   .right {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    /* margin: 0 auto; */
+    padding-top: 1rem;
+    font-size: 0.9rem;
   }
   .message {
-    font-size: 1rem;
-    display: flex;
-    text-align: center;
+    padding: 0;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
   }
   .label-score {
-    padding-bottom: 0.5rem;
-    font-size: 1rem;
-    display: flex;
-    text-align: center;
-  }
-  .label-highscore {
-    padding-bottom: 0.5rem;
-    font-size: 1rem;
-    display: flex;
-    text-align: center;
-  }
-  #number {
-    font-size: 1rem;
+    margin: 0;
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
   }
   footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1.5rem;
+    padding-bottom: 1rem;
   }
 }
