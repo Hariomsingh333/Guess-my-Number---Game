@@ -9,7 +9,7 @@ darkBtn.addEventListener("click", () => {
 const questionMark = document.querySelector(".question-mark");
 const secretNumber = Math.floor(Math.random() * 20 + 1);
 // questionMark.textContent = secretNumber;
-console.log(secretNumber);
+// console.log(secretNumber);
 
 // check button
 
