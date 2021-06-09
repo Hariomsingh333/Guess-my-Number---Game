@@ -68,3 +68,11 @@ againBtn.addEventListener("click", () => {
   // console.log("i am again and i just clicked");
   location.reload();
 });
+
+// enter btn work
+const number = document.querySelector("#number");
+number.addEventListener("keypress", (event) => {
+  if (event.keyCode === 13) {
+    checkBtn.click();
+  }
+});
