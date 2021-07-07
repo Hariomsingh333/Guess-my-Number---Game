@@ -124,7 +124,7 @@ footer {
     margin: 0;
   }
   body {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
     position: relative;
   }
   header {
@@ -185,4 +185,7 @@ footer {
     margin-top: 1.5rem;
     padding-bottom: 1rem;
   }
+}
+.green {
+  background-color: greenyellow;
 }

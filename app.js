@@ -29,11 +29,14 @@ checkBtn.addEventListener("click", () => {
     //if is the number
   } else if (guess === secretNumber) {
     msg.innerText = `you got it: ${secretNumber}`;
-    // adding style
-    body.style.backgroundColor = "#60b347";
     //width change
+    if (guess === secretNumber) {
+      // adding style
+      body.style.backgroundColor = "#60b347";
+      msg.style.color = "white";
+    }
     const questionMark = document.querySelector(".question-mark");
-    questionMark.style.width = "20rem";
+    questionMark.style.width = "10rem";
     questionMark.textContent = secretNumber;
 
     // if the guess is greater then the number (wrong)
@@ -42,6 +45,10 @@ checkBtn.addEventListener("click", () => {
       msg.innerText = `too high!: 📈`;
       scoreNumber--;
       score.innerText = scoreNumber;
+      if (guess >= secretNumber) {
+        body.style.backgroundColor = "red";
+        msg.style.color = "black";
+      }
     } else {
       msg.innerText = `you lost the game!: 😢`;
     }
@@ -51,10 +58,19 @@ checkBtn.addEventListener("click", () => {
     // msg.innerText = `too low!: 📉`;
     // scoreNumber--;
     // score.innerText = scoreNumber;
+
+    if (scoreNumber > 0) {
+      // body.style.backgroundColor = "#ECD662";
+      body.style.backgroundColor = "#FFC947";
+      msg.style.color = "red";
+    }
     if (scoreNumber > 0) {
       msg.innerText = `too low!: 📉`;
       scoreNumber--;
       score.innerText = scoreNumber;
+      // if (scoreNumber <= secretNumber) {
+      //   body.style.backgroundColor = "#ECD662";
+      // }
     } else {
       msg.innerText = `you lost the game!: 😢`;
     }

@@ -1,47 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <title>Guess my Number</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <title>Guess my Number</title>
-</head>
-
-<body>
-  <!-- header  -->
-  <header>
-    <button class="dark-btn">light theme</button>
-    <p class="top-para">(number >= 1 && number <=20) </p>
-        <button class="header-btn">Again!</button>
-        <h1 class="header-h1">guess my number</h1>
-        <div class="question-div">
-          <p class="question-mark">?</p>
-        </div>
-  </header>
-  <!-- main  -->
-  <main>
-    <section class="left">
-      <input type="number" name="number" id="number" min="0" max="20" class="guess-number" required>
-      <button class="check">check</button>
-    </section>
-    <section class="right">
-      <p class="message">start guessing...</p>
-      <p class="label-score">score: <span class="score">20</span></p>
-      <!-- <p class="label-highscore">highScore: <span class="highscore">0</span></p> -->
-    </section>
-  </main>
-  <footer>
-    <p>made with <span><i class="fas fa-heart"></i></span> by <a href="https://twitter.com/Hari_om_333"
-        target="_blank">me</a> <a href="https://twitter.com/Hari_om_333" target="_blank"><i
-          class="fab fa-twitter"></i></a></p>
-  </footer>
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="app.js"></script>
-
+  <body>
+    <!-- header  -->
+    <header>
+      <button class="dark-btn">light theme</button>
+      <p class="top-para">(number >= 1 && number <=20)</p>
+      <button class="header-btn">Again!</button>
+      <h1 class="header-h1">guess my number</h1>
+      <div class="question-div">
+        <p class="question-mark">?</p>
+      </div>
+    </header>
+    <!-- main  -->
+    <main>
+      <section class="left">
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="0"
+          max="20"
+          class="guess-number"
+          required
+        />
+        <button class="check">check</button>
+      </section>
+      <section class="right">
+        <p class="message">start guessing...</p>
+        <p class="label-score">score: <span class="score">20</span></p>
+        <!-- <p class="label-highscore">highScore: <span class="highscore">0</span></p> -->
+      </section>
+    </main>
+    <footer>
+      <p>
+        made with <span><i class="fas fa-heart"></i></span> by
+        <a href="https://twitter.com/Hari_om_333" target="_blank">me</a>
+        <a href="https://twitter.com/Hari_om_333" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </p>
+    </footer>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="app.js"></script>
 </html>
